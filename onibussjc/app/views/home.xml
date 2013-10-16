@@ -1,0 +1,23 @@
+<Alloy>
+	<Window id="win" title="Home">
+		<Require src="includes/header" title="Home" hideButton="true"/>
+
+		<Label id="nome" text="teste1"/>
+
+		<ScrollableView id="favoritesBus" class="container" dataCollection="favoritesCollection">
+			<Label id="nome" text="teste2"/>
+			
+			<ScrollView>
+				<Label id="nome" text="{nome}"/>
+				<Label id="numero" text="{numero}"/>
+				<Label id="sentido" text="{sentido}"/>
+				<Label text="Horários"/>
+				<Label id="semana" text="{semana}"/>
+				<Label id="sabado" text="{sabado}"/>
+				<Label id="domingo" text="{domingo}"/>
+			</ScrollView>
+		</ScrollableView>
+
+	</Window>
+</Alloy>
+

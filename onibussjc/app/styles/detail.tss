@@ -1,0 +1,20 @@
+"Window": {
+	backgroundColor: '#fff'
+},
+
+"labelTitle": {
+	color: '#000',
+	font: {
+		fontSize: '16dp',
+		fontWeight: 'bold'
+	}
+},
+
+"labelDescription": {
+	color: "#000",
+	font: {
+		fontSize: 12,
+		fontFamily: 'Helvetica Neue'
+	},
+	textAlign: 'left'
+}

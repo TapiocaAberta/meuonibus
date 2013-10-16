@@ -1,0 +1,23 @@
+".mainView": {
+    height: Ti.UI.SIZE,
+    width: Ti.UI.FILL,
+    layout: 'vertical'
+}
+
+'Window': {
+	backgroundColor: '#efefef',
+	fullscreen: false,
+	navBarHidden: true
+}
+
+'Label': {
+	color: '#181818',
+	height: Ti.UI.SIZE,
+	textAlign: 'left'
+}
+
+'.container': {
+	layout: 'vertical',
+	top: '50dp',
+	bottom: 0
+}

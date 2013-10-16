@@ -1,0 +1,15 @@
+<Alloy>
+	<TabGroup>
+		<Tab id="homeTab" title="Home">
+			<Require src="home"/>
+		</Tab>
+
+		<Tab id="listTab" title="Listagem dos ônibus">
+			<Require src="list"/>
+		</Tab>
+
+		<Tab id="configTab" title="Configurações">
+			<Require src="configurations"/>
+		</Tab>
+	</TabGroup>
+</Alloy>
