@@ -13,10 +13,11 @@ function setBusProperties()
 		$.numero.text = model.get("numero"),
 		$.sentido.text = model.get("sentido");
 		
+		// $.lblHorarios.text = "Horários"
 		var horarios = model.get("horarios");
-		$.semana.text = horarios.semana;
-		$.sabado.text = horarios.sabado;
-		$.domingo.text = horarios.domingo;
+		$.semana.text = "Dias de Semana: " + horarios.semana;
+		$.sabado.text = "Sábados: " + horarios.sabado;
+		$.domingo.text = "Domingos: " + horarios.domingo;
 	}
 }
 

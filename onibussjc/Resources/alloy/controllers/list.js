@@ -1,25 +1,25 @@
 function Controller() {
-    function __alloyId40() {
-        __alloyId40.opts || {};
-        var models = __alloyId39.models;
+    function __alloyId42() {
+        __alloyId42.opts || {};
+        var models = __alloyId41.models;
         var len = models.length;
         var rows = [];
         for (var i = 0; len > i; i++) {
-            var __alloyId29 = models[i];
-            __alloyId29.__transform = {};
-            var __alloyId30 = Ti.UI.createTableViewRow({
+            var __alloyId31 = models[i];
+            __alloyId31.__transform = {};
+            var __alloyId32 = Ti.UI.createTableViewRow({
                 height: "80dp",
                 hasChild: true,
-                modelId: "undefined" != typeof __alloyId29.__transform["id_onibus"] ? __alloyId29.__transform["id_onibus"] : __alloyId29.get("id_onibus")
+                modelId: "undefined" != typeof __alloyId31.__transform["id_onibus"] ? __alloyId31.__transform["id_onibus"] : __alloyId31.get("id_onibus")
             });
-            rows.push(__alloyId30);
-            var __alloyId32 = Ti.UI.createView({
+            rows.push(__alloyId32);
+            var __alloyId34 = Ti.UI.createView({
                 height: Ti.UI.SIZE,
                 width: Ti.UI.FILL,
                 layout: "vertical"
             });
-            __alloyId30.add(__alloyId32);
-            var __alloyId34 = Ti.UI.createLabel({
+            __alloyId32.add(__alloyId34);
+            var __alloyId36 = Ti.UI.createLabel({
                 color: "#181818",
                 height: Ti.UI.SIZE,
                 textAlign: "left",
@@ -29,23 +29,9 @@ function Controller() {
                     fontSize: "14dp",
                     fontWeight: "bold"
                 },
-                text: "undefined" != typeof __alloyId29.__transform["nome"] ? __alloyId29.__transform["nome"] : __alloyId29.get("nome")
+                text: "undefined" != typeof __alloyId31.__transform["nome"] ? __alloyId31.__transform["nome"] : __alloyId31.get("nome")
             });
-            __alloyId32.add(__alloyId34);
-            var __alloyId36 = Ti.UI.createLabel({
-                color: "#555",
-                height: Ti.UI.SIZE,
-                textAlign: "left",
-                left: "10dp",
-                right: "40dp",
-                top: "5dp",
-                font: {
-                    fontSize: "10dp",
-                    fontWeight: "normal"
-                },
-                text: "undefined" != typeof __alloyId29.__transform["numero"] ? __alloyId29.__transform["numero"] : __alloyId29.get("numero")
-            });
-            __alloyId32.add(__alloyId36);
+            __alloyId34.add(__alloyId36);
             var __alloyId38 = Ti.UI.createLabel({
                 color: "#555",
                 height: Ti.UI.SIZE,
@@ -57,9 +43,23 @@ function Controller() {
                     fontSize: "10dp",
                     fontWeight: "normal"
                 },
-                text: "undefined" != typeof __alloyId29.__transform["sentido"] ? __alloyId29.__transform["sentido"] : __alloyId29.get("sentido")
+                text: "undefined" != typeof __alloyId31.__transform["numero"] ? __alloyId31.__transform["numero"] : __alloyId31.get("numero")
             });
-            __alloyId32.add(__alloyId38);
+            __alloyId34.add(__alloyId38);
+            var __alloyId40 = Ti.UI.createLabel({
+                color: "#555",
+                height: Ti.UI.SIZE,
+                textAlign: "left",
+                left: "10dp",
+                right: "40dp",
+                top: "5dp",
+                font: {
+                    fontSize: "10dp",
+                    fontWeight: "normal"
+                },
+                text: "undefined" != typeof __alloyId31.__transform["sentido"] ? __alloyId31.__transform["sentido"] : __alloyId31.get("sentido")
+            });
+            __alloyId34.add(__alloyId40);
         }
         $.__views.table.setData(rows);
     }
@@ -95,31 +95,33 @@ function Controller() {
         id: "win"
     });
     $.__views.win && $.addTopLevelView($.__views.win);
-    $.__views.__alloyId26 = Alloy.createController("includes/header", {
+    $.__views.__alloyId28 = Alloy.createController("includes/header", {
         title: "Lista de Ônibus",
         hideButton: "true",
-        id: "__alloyId26",
+        id: "__alloyId28",
         __parentSymbol: $.__views.win
     });
-    $.__views.__alloyId26.setParent($.__views.win);
-    $.__views.__alloyId27 = Ti.UI.createSearchBar({
-        id: "__alloyId27"
+    $.__views.__alloyId28.setParent($.__views.win);
+    $.__views.__alloyId29 = Ti.UI.createSearchBar({
+        id: "__alloyId29"
     });
     $.__views.table = Ti.UI.createTableView({
         layout: "vertical",
         top: "50dp",
+        right: "10dp",
+        left: "10dp",
         bottom: 0,
         separatorColor: "#a00",
-        search: $.__views.__alloyId27,
+        search: $.__views.__alloyId29,
         id: "table",
         filterAttribute: "nome"
     });
     $.__views.win.add($.__views.table);
-    var __alloyId39 = Alloy.Collections["onibusCollection"] || onibusCollection;
-    __alloyId39.on("fetch destroy change add remove reset", __alloyId40);
+    var __alloyId41 = Alloy.Collections["onibusCollection"] || onibusCollection;
+    __alloyId41.on("fetch destroy change add remove reset", __alloyId42);
     loadDetails ? $.__views.table.addEventListener("click", loadDetails) : __defers["$.__views.table!click!loadDetails"] = true;
     exports.destroy = function() {
-        __alloyId39.off("fetch destroy change add remove reset", __alloyId40);
+        __alloyId41.off("fetch destroy change add remove reset", __alloyId42);
     };
     _.extend($, $.__views);
     var onibusCollection = Alloy.Collections.onibusCollection;

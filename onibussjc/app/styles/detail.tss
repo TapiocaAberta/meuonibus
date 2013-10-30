@@ -1,20 +1,18 @@
-"Window": {
-	backgroundColor: '#fff'
-},
-
-"labelTitle": {
-	color: '#000',
+".labelTitle": {
+	color:"#000000",
 	font: {
-		fontSize: '16dp',
-		fontWeight: 'bold'
-	}
-},
-
-"labelDescription": {
-	color: "#000",
-	font: {
-		fontSize: 12,
+		fontSize: '18dp',
+		fontWeight: 'bold',
 		fontFamily: 'Helvetica Neue'
 	},
-	textAlign: 'left'
+	textAlign: 'center'
+},
+
+".labelDescription": {
+	color:"#000000",
+	font: {
+		fontSize: 14,
+		fontFamily: 'Helvetica Neue'
+	},
+	textAlign: 'justify'
 }

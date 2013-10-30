@@ -11,13 +11,19 @@
 }
 
 'Label': {
-	color: '#181818',
+	color:"#000000",
 	height: Ti.UI.SIZE,
-	textAlign: 'left'
+	textAlign: 'justify',
+	font: {
+		fontSize: 14,
+		fontFamily: 'Helvetica Neue'
+	}
 }
 
 '.container': {
 	layout: 'vertical',
 	top: '50dp',
+	right:'10dp', 
+	left:'10dp',
 	bottom: 0
 }

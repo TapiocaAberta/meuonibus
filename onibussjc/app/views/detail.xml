@@ -1,18 +1,17 @@
 <Alloy>
 	<Window id="win" title="Detalhes">
 		<Require src="includes/header" title="Detalhes"/>
-
-		<ScrollView class="container">
-			<Label class="labelTitle" id="nome"/>
-			<Label class="labelDescription" id="numero"/>
-			<Label class="labelDescription" id="sentido"/>
-			
-			<Label class="labelTitle" text="Horários"/>
-			<Label class="labelDescription" id="semana"/>
-			<Label class="labelDescription" id="sabado"/>
-			<Label class="labelDescription" id="domingo"/>
-		<ScrollView>
-		
+		<ScrollableView>
+			<ScrollView class="container">
+				<Label class="labelTitle" id="nome"/>
+				<Label class="labelDescription" id="numero"/>
+				<Label class="labelDescription" id="sentido"/>
+				
+				<Label class="labelTitle" text="Horários"/>
+				<Label class="labelDescription" id="semana"/>
+				<Label class="labelDescription" id="sabado"/>
+				<Label class="labelDescription" id="domingo"/>
+			</ScrollView>
+		</ScrollableView>
 	</Window>
 </Alloy>
-

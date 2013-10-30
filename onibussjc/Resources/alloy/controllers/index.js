@@ -9,36 +9,36 @@ function Controller() {
     $.__views.index = Ti.UI.createTabGroup({
         id: "index"
     });
-    $.__views.__alloyId22 = Alloy.createController("home", {
-        id: "__alloyId22"
+    $.__views.__alloyId24 = Alloy.createController("home", {
+        id: "__alloyId24"
     });
     $.__views.homeTab = Ti.UI.createTab({
         icon: "/icons/ic_menu_home.png",
-        window: $.__views.__alloyId22.getViewEx({
+        window: $.__views.__alloyId24.getViewEx({
             recurse: true
         }),
         id: "homeTab",
         title: "Home"
     });
     $.__views.index.addTab($.__views.homeTab);
-    $.__views.__alloyId23 = Alloy.createController("list", {
-        id: "__alloyId23"
+    $.__views.__alloyId25 = Alloy.createController("list", {
+        id: "__alloyId25"
     });
     $.__views.listTab = Ti.UI.createTab({
         icon: "/icons/KS_nav_ui.png",
-        window: $.__views.__alloyId23.getViewEx({
+        window: $.__views.__alloyId25.getViewEx({
             recurse: true
         }),
         id: "listTab",
         title: "Listagem dos ônibus"
     });
     $.__views.index.addTab($.__views.listTab);
-    $.__views.__alloyId24 = Alloy.createController("configurations", {
-        id: "__alloyId24"
+    $.__views.__alloyId26 = Alloy.createController("configurations", {
+        id: "__alloyId26"
     });
     $.__views.configTab = Ti.UI.createTab({
         icon: "/icons/ic_menu_manage.png",
-        window: $.__views.__alloyId24.getViewEx({
+        window: $.__views.__alloyId26.getViewEx({
             recurse: true
         }),
         id: "configTab",
