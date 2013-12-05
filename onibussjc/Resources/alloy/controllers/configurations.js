@@ -9,15 +9,18 @@ function Controller() {
     $.__views.configurations = Ti.UI.createWindow({
         backgroundColor: "#efefef",
         fullscreen: false,
-        navBarHidden: true,
         title: "Configurações",
         id: "configurations"
     });
     $.__views.configurations && $.addTopLevelView($.__views.configurations);
     $.__views.__alloyId0 = Ti.UI.createLabel({
-        color: "#181818",
+        color: "#000000",
         height: Ti.UI.SIZE,
-        textAlign: "left",
+        textAlign: "justify",
+        font: {
+            fontSize: 14,
+            fontFamily: "Helvetica Neue"
+        },
         text: "Configurações",
         id: "__alloyId0"
     });

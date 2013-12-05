@@ -1,6 +1,5 @@
 <Alloy>
-	<Window id="win" title="Detalhes">
-		<Require src="includes/header" title="Detalhes"/>
+	<Window id="details" title="Detalhes">
 		<ScrollableView>
 			<ScrollView class="container">
 				<Label class="labelTitle" id="nome"/>

@@ -1,5 +1,7 @@
-"Window": {
-	backgroundColor: "#fff"
+'Window': {
+	backgroundColor: '#efefef',
+	fullscreen: false,
+	navBarHidden: true
 },
 
 "Label": {

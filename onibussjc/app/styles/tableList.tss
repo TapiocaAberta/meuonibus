@@ -1,0 +1,49 @@
+'.container': {
+	layout: 'vertical'
+}
+
+".mainView": {
+    height: Ti.UI.SIZE,
+    width: Ti.UI.FILL,
+    layout: 'vertical'
+}
+
+'#index': {
+	exitOnClose: true
+}
+
+'#table': {
+	bottom: 0,
+	separatorColor: '#a00'
+}
+
+'.row': {
+	height: '80dp',
+	hasChild: true
+}
+
+'.rowContainer': {
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL,
+	layout: 'vertical'
+}
+
+'.title': {
+	left: '10dp',
+	right: '40dp',
+	font: {
+		fontSize: '14dp',
+		fontWeight: 'bold'
+	}
+}
+
+'.subtitle': {
+	left: '10dp',
+	right: '40dp',
+	top: '5dp',
+	font: {
+		fontSize: '10dp',
+		fontWeight: 'normal'
+	},
+	color: '#555'
+}

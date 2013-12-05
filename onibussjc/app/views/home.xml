@@ -1,7 +1,5 @@
 <Alloy>
 	<Window id="win" title="Home">
-		<Require src="includes/header" title="Home" hideButton="true"/>
-
 		<Label id="nome" text="teste1"/>
 
 		<ScrollableView id="favoritesBus" class="container" dataCollection="favoritesCollection">

@@ -1,16 +1,9 @@
-<Alloy>
-	<Window id="win">
-		<Require src="includes/header" title="Lista de Ônibus" hideButton="true"/>
-		
-		<TableView id="table" dataCollection="onibusCollection" onClick="loadDetails" class="container" filterAttribute="nome">
-			<SearchBar platform="android,ios"/>
-			<TableViewRow class="row" modelId="{id_onibus}">
-				<View class="rowContainer">
-					<Label class="title" text="{nome}"/>
-					<Label class="subtitle" text="{numero}"/>
-					<Label class="subtitle" text="{sentido}"/>
-				</View>
-			</TableViewRow>
-		</TableView>
-	</Window>
+<Alloy>	
+	<!-- iPhone -->
+	<Window id="win" platform="ios" formFactor="handheld">
+		<Require src="tableList" id="tableList"/>
+   	</Window>
+  
+  	<!-- Android -->
+    <Require id="tableList" src="tableList" platform="android"/>
 </Alloy>

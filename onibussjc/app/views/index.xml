@@ -1,5 +1,6 @@
 <Alloy>
-	<TabGroup>
+
+	<TabGroup id="win">
 		<Tab id="homeTab" title="Home">
 			<Require src="home"/>
 		</Tab>

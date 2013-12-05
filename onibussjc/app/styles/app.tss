@@ -6,8 +6,7 @@
 
 'Window': {
 	backgroundColor: '#efefef',
-	fullscreen: false,
-	navBarHidden: true
+	fullscreen: false
 }
 
 'Label': {
@@ -22,8 +21,5 @@
 
 '.container': {
 	layout: 'vertical',
-	top: '50dp',
-	right:'10dp', 
-	left:'10dp',
 	bottom: 0
 }

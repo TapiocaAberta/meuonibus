@@ -1,5 +1,3 @@
-Alloy.Globals.setupWindow($.win);
-
 var favoritesCollection = Alloy.Collections.favoritesCollection;
 
 function updateFavoritesView()

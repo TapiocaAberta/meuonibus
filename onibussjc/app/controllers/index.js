@@ -1,3 +1,2 @@
-Alloy.Globals.setupWindow($.index);
-
-$.index.open();
+//Alloy.Globals.setupWindow($.win);
+$.win.open();
