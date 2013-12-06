@@ -11,6 +11,7 @@ The goal of this project is to create a mobile application that displays informa
 
 The city does not provide the data in an open format, forcing us to create a [WebCrawler](http://pt.wikipedia.org/wiki/Web_crawle) to make the process of scraping and provide an REST api of schedules and itineraries of buses from São José dos Campos in JSON format. The entire source code of the Server Scrap are [here](https://github.com/transparenciasjc/spider_bus_java).
 
+
 # Platforms and System Architecture
 
 The project was developed using [Titanium Alloy Framework](http://docs.appcelerator.com/titanium/3.0/#!/Guide/Alloy_Framework), it allows the app to be "published" on the Android and iOS platforms with same source code.
@@ -54,8 +55,7 @@ Before you begin using the Titanium CLI, you should configure it by running the
 
     titanium setup
 
-It will prompt you with a number of questions such as your e-mail address (for
-logging into the Appcelerator Network), the location of your Android SDK, and so on.
+It will prompt you with a number of questions such as your e-mail address (for logging into the Appcelerator Network), the location of your Android SDK, and so on.
 
 finally, run the application! :D
 
