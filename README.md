@@ -9,7 +9,7 @@ O objetivo deste projeto é o de criar um aplicativo móvel que exiba as informa
 
 # Coleta de Dados.
 
-A prefeitura não disponibiliza os dados em formato aberto, forçando a necessidade da criação de um [WebCrawler](http://pt.wikipedia.org/wiki/Web_crawler) para realizar o processo de raspagem, para que fosse possível acessar os dados de maneira automática, e consequentemente deixá-los de maneira normalizada e interoperável (JSON), todo o código do Scrap está [neste repositório](https://github.com/transparenciasjc/dados_onibus).
+A prefeitura não disponibiliza os dados em formato aberto, forçando a necessidade da criação de um [WebCrawler](http://pt.wikipedia.org/wiki/Web_crawler) para realizar o processo de raspagem, para que fosse possível acessar os dados de maneira automática, e consequentemente deixá-los de maneira normalizada e interoperável (JSON), todo o código do Scrap está [neste repositório](https://github.com/transparenciasjc/spider_bus_java).
 
 # Plataformas e Arquitetura do Sistema
 
