@@ -7,7 +7,7 @@
 			class="container" 
 			filterAttribute="nome">
 			
-			<SearchBar platform="android,ios" hintText="Digite o nome da linha"/>
+			<SearchBar platform="android,ios" hintText="Digite o nome da linha"/> 
 			<TableViewRow class="row" modelId="{id_onibus}" nome="{nome}">
 				<View class="rowContainer">
 					<Label class="title" text="{nome}"/>
