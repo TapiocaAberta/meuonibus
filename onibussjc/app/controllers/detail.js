@@ -2,7 +2,7 @@ Alloy.Globals.setupWindow($.details);
 
 var self = this;
 
-var favorites = Alloy.Collections.favoritesCollection
+var favorites = Alloy.Collections.favoritesCollection;
 
 var args = arguments[0] || {};
 var model = args.model;
@@ -22,7 +22,7 @@ self.setBusProperties = function()
 			var strTimes = self.processTimes(horarios.semana);
 			$.semana.text = "\n\n\n\nDias de Semana: " + strTimes;
 		} else {
-			$.semana.text = "Nenhum horário"
+			$.semana.text = "Nenhum horário";
 		}
 
 		if(horarios.sabado)
@@ -30,7 +30,7 @@ self.setBusProperties = function()
 			var strTimes = self.processTimes(horarios.sabado);
 			$.sabado.text = "\n\n\n\nSábados: "  + strTimes;
 		} else {
-			$.sabado.text = "Nenhum horário"
+			$.sabado.text = "Nenhum horário";
 		}
 
 		if(horarios.domingo)
@@ -38,7 +38,7 @@ self.setBusProperties = function()
 			var strTimes = self.processTimes(horarios.domingo);
 			$.domingo.text = "\n\n\n\nDomingos: " + strTimes;
 		} else {
-			$.domingo.text = "Nenhum horário"
+			$.domingo.text = "Nenhum horário";
 		}
 	}
 };

@@ -10,7 +10,8 @@ function Controller() {
             var __alloyId27 = Ti.UI.createTableViewRow({
                 height: "80dp",
                 hasChild: true,
-                modelId: "undefined" != typeof __alloyId26.__transform["id_onibus"] ? __alloyId26.__transform["id_onibus"] : __alloyId26.get("id_onibus")
+                modelId: "undefined" != typeof __alloyId26.__transform["id_onibus"] ? __alloyId26.__transform["id_onibus"] : __alloyId26.get("id_onibus"),
+                nome: "undefined" != typeof __alloyId26.__transform["nome"] ? __alloyId26.__transform["nome"] : __alloyId26.get("nome")
             });
             rows.push(__alloyId27);
             var __alloyId29 = Ti.UI.createView({
@@ -96,7 +97,9 @@ function Controller() {
         id: "win",
         title: "Listagem dos ônibus"
     });
+    $.__views.win && $.addTopLevelView($.__views.win);
     $.__views.__alloyId24 = Ti.UI.createSearchBar({
+        hintText: "Digite o nome da linha",
         id: "__alloyId24"
     });
     $.__views.table = Ti.UI.createTableView({
@@ -111,17 +114,11 @@ function Controller() {
     var __alloyId36 = Alloy.Collections["onibusCollection"] || onibusCollection;
     __alloyId36.on("fetch destroy change add remove reset", __alloyId37);
     loadDetails ? $.__views.table.addEventListener("click", loadDetails) : __defers["$.__views.table!click!loadDetails"] = true;
-    $.__views.navgroup = Ti.UI.iPhone.createNavigationGroup({
-        window: $.__views.win,
-        id: "navgroup"
-    });
-    $.__views.navgroup && $.addTopLevelView($.__views.navgroup);
     exports.destroy = function() {
         __alloyId36.off("fetch destroy change add remove reset", __alloyId37);
     };
     _.extend($, $.__views);
     var onibusCollection = Alloy.Collections.onibusCollection;
-    true && Alloy.isHandheld && (Alloy.Globals.navgroup = $.navgroup);
     createDatabase();
     $.win.addEventListener("close", function() {
         $.destroy();

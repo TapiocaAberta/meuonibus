@@ -5,7 +5,7 @@
     <version>1.0</version>
     <publisher>funcatemobile</publisher>
     <url>http://transparenciasjc.org</url>
-    <description>not specified</description>
+    <description>Aplicativo para visualizar dados relacionados aos ônibus da cidade de São José dos Campos.</description>
     <copyright>2013 by funcatemobile</copyright>
     <icon>appicon.png</icon>
     <persistent-wifi>false</persistent-wifi>
@@ -41,7 +41,7 @@
     <deployment-targets>
         <target device="android">true</target>
         <target device="blackberry">false</target>
-        <target device="ipad">false</target>
+        <target device="ipad">true</target>
         <target device="iphone">true</target>
         <target device="mobileweb">false</target>
         <target device="tizen">false</target>
@@ -50,4 +50,5 @@
     <plugins>
         <plugin version="1.0">ti.alloy</plugin>
     </plugins>
+    <property name="ti.deploytype">test</property>
 </ti:app>

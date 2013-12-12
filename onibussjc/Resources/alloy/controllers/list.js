@@ -15,13 +15,19 @@ function Controller() {
         });
         $.__views.win && $.addTopLevelView($.__views.win);
         $.__views.tableList = Alloy.createController("tableList", {
-            id: "tableList",
-            __parentSymbol: $.__views.win
+            id: "tableList"
         });
-        $.__views.tableList.setParent($.__views.win);
+        $.__views.navgroup = Ti.UI.iPhone.createNavigationGroup({
+            window: $.__views.tableList.getViewEx({
+                recurse: true
+            }),
+            id: "navgroup"
+        });
+        $.__views.win.add($.__views.navgroup);
     }
     exports.destroy = function() {};
     _.extend($, $.__views);
+    true && Alloy.isHandheld && (Alloy.Globals.navgroup = $.navgroup);
     _.extend($, exports);
 }
 

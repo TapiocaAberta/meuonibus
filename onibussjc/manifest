@@ -1,9 +1,9 @@
-#appname: onibussjc
-#appid: br.com.onibussjc
-#type: mobile
-#guid: 0841439b-cf04-4eb9-a6b5-c431d73b66af
-#version: 1.0
-#publisher: not specified
-#url: not specified
-#image: appicon.png
-#desc: not specified
+#appname:onibussjc
+#appid:br.com.onibussjc
+#type:ipad
+#guid:0841439b-cf04-4eb9-a6b5-c431d73b66af
+#version:1.0
+#publisher:funcatemobile
+#url:http://transparenciasjc.org
+#image:appicon.png
+#desc:Aplicativo para visualizar dados relacionados aos ônibus da cidade de São José dos Campos.

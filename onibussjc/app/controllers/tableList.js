@@ -1,10 +1,5 @@
 var onibusCollection = Alloy.Collections.onibusCollection;
 
-// Creates an navgroup if Android.
-if (OS_IOS && Alloy.isHandheld) {
-	Alloy.Globals.navgroup = $.navgroup;
-}
-
 function loadDetails(e) 
 {
 	var model = onibusCollection.get(e.rowData.modelId);

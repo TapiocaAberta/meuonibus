@@ -1,7 +1,9 @@
 <Alloy>	
 	<!-- iPhone -->
 	<Window id="win" platform="ios" formFactor="handheld">
-		<Require src="tableList" id="tableList"/>
+		<NavigationGroup id="navgroup">
+			<Require src="tableList" id="tableList"/>
+		</NavigationGroup>
    	</Window>
   
   	<!-- Android -->

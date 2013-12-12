@@ -1,18 +1,20 @@
 <Alloy>
-
-	<NavigationGroup id="navgroup">
-		<Window id="win" title="Listagem dos ônibus">
-			<TableView id="table" dataCollection="onibusCollection" onClick="loadDetails" class="container" filterAttribute="nome">
-				<SearchBar platform="android,ios"/>
-				<TableViewRow class="row" modelId="{id_onibus}">
-					<View class="rowContainer">
-						<Label class="title" text="{nome}"/>
-						<Label class="subtitle" text="{numero}"/>
-						<Label class="subtitle" text="{sentido}"/>
-					</View>
-				</TableViewRow>
-			</TableView>
-		</Window>
-	</NavigationGroup>
-
+	<Window id="win" title="Listagem dos ônibus">
+		<TableView 
+			id="table" 
+			dataCollection="onibusCollection" 
+			onClick="loadDetails" 
+			class="container" 
+			filterAttribute="nome">
+			
+			<SearchBar platform="android,ios" hintText="Digite o nome da linha"/>
+			<TableViewRow class="row" modelId="{id_onibus}" nome="{nome}">
+				<View class="rowContainer">
+					<Label class="title" text="{nome}"/>
+					<Label class="subtitle" text="{numero}"/>
+					<Label class="subtitle" text="{sentido}"/>
+				</View>
+			</TableViewRow>
+		</TableView>
+	</Window>
 </Alloy>
